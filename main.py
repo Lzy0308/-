@@ -32,7 +32,7 @@ def get_birthday():
   next = datetime.strptime(str(date.today().year) + "-" + birthday, "%Y-%m-%d")
   if next < datetime.now():
     next = next.replace(year=next.year + 1)
-  return (next - today).days\n
+  return (next - today).days
 
 def get_words():
   words = "永远做老大最忠诚的小弟"
